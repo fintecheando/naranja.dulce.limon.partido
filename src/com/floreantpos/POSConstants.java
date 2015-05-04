@@ -5,6 +5,38 @@ public class POSConstants {
         public static final String REGULAR_MODE_BUTTON_TEXT = Messages.getString("REGULAR_MODE_BUTTON_TEXT"); //$NON-NLS-1$
         public static final String CASHIER_MODE_BUTTON_TEXT = Messages.getString("CASHIER_MODE_BUTTON_TEXT"); //$NON-NLS-1$
         public static final String KITCHEN_MODE_BUTTON_TEXT = Messages.getString("KITCHEN_MODE_BUTTON_TEXT"); //$NON-NLS-1$
+        public static final String OTHER_FUNCTIONS_BUTTON_TEXT = Messages.getString("OTHER_FUNCTIONS_BUTTON_TEXT"); //$NON-NLS-1$
+        
+        public static final String TOTAL_AMOUNT = Messages.getString("TOTAL_AMOUNT"); //$NON-NLS-1$
+        public static final String TENDERED_AMOUNT = Messages.getString("TENDERED_AMOUNT"); //$NON-NLS-1$
+        public static final String PAID_AMOUNT = Messages.getString("PAID_AMOUNT"); //$NON-NLS-1$
+        
+        public static final String CASH = Messages.getString("CASH"); //$NON-NLS-1$
+        public static final String DEBIT = Messages.getString("DEBIT"); //$NON-NLS-1$
+        public static final String CREDIT = Messages.getString("CREDIT"); //$NON-NLS-1$
+        public static final String AUTO_LOGOFF_IN = Messages.getString("AUTO_LOGOFF_IN"); //$NON-NLS-1$
+        
+        public static final String DUE_AMOUNT = Messages.getString("DUE_AMOUNT"); //$NON-NLS-1$
+        public static final String GRATUITY_AMOUNT = Messages.getString("GRATUITY_AMOUNT"); //$NON-NLS-1$
+        public static final String CHANGE_DUE = Messages.getString("CHANGE_DUE"); //$NON-NLS-1$
+        public static final String PRINT_STORE_COPY = Messages.getString("PRINT_STORE_COPY"); //$NON-NLS-1$
+        public static final String PRINT_STORE_MERCHANT_COPY = Messages.getString("PRINT_STORE_MERCHANT_COPY"); //$NON-NLS-1$
+                
+        public static final String UNIT_PRICE = Messages.getString("UNIT_PRICE"); //$NON-NLS-1$
+        public static final String UNIT = Messages.getString("UNIT"); //$NON-NLS-1$        
+        public static final String VALUE = Messages.getString("VALUE"); //$NON-NLS-1$        
+        
+        public static final String ERROR_LOGIN = Messages.getString("PosMessage.Error.Login"); //$NON-NLS-1$
+        public static final String ERROR_USER = Messages.getString("PosMessage.Error.User"); //$NON-NLS-1$
+        
+        public static final String TAX_INCLUDED = Messages.getString("PosMessage.500"); //$NON-NLS-1$
+        public static final String TAX_NON_INCLUDED = Messages.getString("PosMessage.501"); //$NON-NLS-1$
+        
+        public static final String CONFIRM_PAYMENT = Messages.getString("PosMessage.502"); //$NON-NLS-1$
+        public static final String PAYMENT_YOU_ARE_GOING_TO = Messages.getString("PosMessage.503"); //$NON-NLS-1$
+        public static final String PAYMENT_CONFIRM_CANCEL = Messages.getString("PosMessage.504"); //$NON-NLS-1$
+        public static final String SETTLE_TICKET = Messages.getString("PosMessage.505"); //$NON-NLS-1$
+
         
 	public static final String DINE_IN_BUTTON_TEXT = Messages.getString("DINE_IN_BUTTON_TEXT"); //$NON-NLS-1$
 	public static final String TAKE_OUT_BUTTON_TEXT = Messages.getString("TAKE_OUT_BUTTON_TEXT"); //$NON-NLS-1$
@@ -43,6 +75,7 @@ public class POSConstants {
 	public static final String ALIAS_LABEL = Messages.getString("ALIAS_LABEL"); //$NON-NLS-1$
 
 	public static final String CANCEL_BUTTON_TEXT = Messages.getString("CANCEL_BUTTON_TEXT"); //$NON-NLS-1$
+        public static final String CONFIRM_BUTTON_TEXT = Messages.getString("CONFIRM_BUTTON_TEXT"); //$NON-NLS-1$
 	public static final String SAVE_BUTTON_TEXT = Messages.getString("SAVE_BUTTON_TEXT"); //$NON-NLS-1$
 	public static final String PAY_BUTTON_TEXT = Messages.getString("PAY_BUTTON_TEXT"); //$NON-NLS-1$
 	

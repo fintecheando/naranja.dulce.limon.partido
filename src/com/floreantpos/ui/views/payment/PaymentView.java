@@ -163,7 +163,7 @@ public class PaymentView extends JPanel {
 
 		posButton12.setAction(calAction);
 		posButton12.setIcon(IconFactory.getIcon("/ui_icons/", "clear.png")); // NOI18N
-		posButton12.setText("CLEAR");
+		posButton12.setText(POSConstants.CLEAR);
 		posButton12.setFocusable(false);
 		calcButtonPanel.add(posButton12);
 
@@ -237,10 +237,10 @@ public class PaymentView extends JPanel {
 		transparentPanel1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 15, 15, 15));
 
 		jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-		jLabel4.setText("DUE AMOUNT:");
+		jLabel4.setText(POSConstants.DUE_AMOUNT);
 
 		jLabel6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-		jLabel6.setText("TENDERED AMOUNT:");
+		jLabel6.setText(POSConstants.TENDERED_AMOUNT);
 
 		tfDueAmount.setEditable(false);
 		tfDueAmount.setHorizontalAlignment(javax.swing.JTextField.RIGHT);

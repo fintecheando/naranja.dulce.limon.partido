@@ -1,12 +1,13 @@
 package com.floreantpos.model;
 
+import com.floreantpos.POSConstants;
 import com.floreantpos.config.CardConfig;
 
 public enum PaymentType {
-	CASH("CASH"), DEBIT_VISA("Visa", "visa_card.png"), DEBIT_MASTER_CARD("MasterCard", "master_card.png"), 
+	CASH(POSConstants.CASH), DEBIT_VISA("Visa", "visa_card.png"), DEBIT_MASTER_CARD("MasterCard", "master_card.png"), 
 	CREDIT_VISA("Visa", "visa_card.png"), CREDIT_MASTER_CARD("MasterCard", "master_card.png"), 
 	CREDIT_AMEX("Amex", "am_ex_card.png"), CREDIT_DISCOVERY("Discover", "discover_card.png"), 
-	GIFT_CERTIFICATE("GIFT CERTIFICATE");
+	GIFT_CERTIFICATE(POSConstants.GIFT_CERTIFICATE);
 
 	private String displayString;
 	private String imageFile;

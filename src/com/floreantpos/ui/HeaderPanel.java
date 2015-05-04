@@ -16,6 +16,7 @@ import net.miginfocom.swing.MigLayout;
 
 import com.floreantpos.IconFactory;
 import com.floreantpos.Messages;
+import com.floreantpos.POSConstants;
 import com.floreantpos.actions.ClockoutAction;
 import com.floreantpos.actions.LogoutAction;
 import com.floreantpos.actions.ShowBackofficeAction;
@@ -25,6 +26,8 @@ import com.floreantpos.main.Application;
 import com.floreantpos.swing.PosButton;
 import com.floreantpos.swing.TransparentPanel;
 import com.floreantpos.util.PosGuiUtil;
+import java.text.DateFormat;
+import java.util.Locale;
 
 public class HeaderPanel extends JPanel {
 	private static final SimpleDateFormat dateFormat = new SimpleDateFormat("MMM dd yyyy, hh:mm:ss aaa"); //$NON-NLS-1$
@@ -88,8 +91,9 @@ public class HeaderPanel extends JPanel {
 		sb.append(userString + ": " + Application.getCurrentUser().getFirstName()); //$NON-NLS-1$
 		sb.append(", "); //$NON-NLS-1$
 		sb.append(terminalString + ": " + Application.getInstance().getTerminal().getName()); //$NON-NLS-1$
-		sb.append(", "); //$NON-NLS-1$
+		sb.append(", "); //$NON-NLS-1$                
 		sb.append(dateFormat.format(Calendar.getInstance().getTime()));
+                
 
 		statusLabel.setText(sb.toString());
 	}
@@ -144,7 +148,7 @@ public class HeaderPanel extends JPanel {
 			int min = countDown / 60;
 			int sec = countDown % 60;
 
-			logoffLabel.setText("Aoto logoff in " + min + ":" + sec);
+			logoffLabel.setText(POSConstants.AUTO_LOGOFF_IN+" " + min + ":" + sec);
 
 			if (countDown == 0) {
 				Application.getInstance().doLogout();

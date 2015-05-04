@@ -1,5 +1,6 @@
 package com.floreantpos.ui.ticket;
 
+import com.floreantpos.POSConstants;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -20,7 +21,7 @@ public class TodoTicketViewerTableModel extends AbstractTableModel {
 
 	private List<ITicketItem> items = new ArrayList<ITicketItem>();
 
-	protected String[] columnNames = { "Item", "U/Price", "Unit", "Tax", "Value" };
+	protected String[] columnNames = { POSConstants.ITEM, POSConstants.UNIT_PRICE, POSConstants.UNIT, POSConstants.TAX, POSConstants.VALUE };
 
 	private boolean forReciptPrint;
 	private boolean printCookingInstructions;

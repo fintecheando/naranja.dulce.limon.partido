@@ -1,5 +1,6 @@
 package com.floreantpos.ui.ticket;
 
+import com.floreantpos.POSConstants;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
@@ -24,8 +25,8 @@ public class TicketViewerTableModel extends AbstractTableModel {
 
 	private boolean priceIncludesTax = false;
 	
-	protected String[] excludingTaxColumnNames = { "Item", "U/Price", "Unit", "Tax", "Price" };
-	protected String[] includingTaxColumnNames = { "Item", "U/Price", "Unit", "Price" };
+	protected String[] excludingTaxColumnNames = {POSConstants.ITEM, POSConstants.UNIT_PRICE, POSConstants.UNIT, POSConstants.TAX, POSConstants.PRICE };
+	protected String[] includingTaxColumnNames = { POSConstants.ITEM, POSConstants.UNIT_PRICE, POSConstants.UNIT, POSConstants.PRICE };
 
 	private boolean forReciptPrint;
 	private boolean printCookingInstructions;

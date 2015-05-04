@@ -77,7 +77,7 @@ public class SettleTicketDialog extends POSDialog implements CardInputListener {
 
 	public SettleTicketDialog() {
 		super();
-		setTitle("Settle ticket");
+		setTitle(POSConstants.SETTLE_TICKET);
 
 		getContentPane().setLayout(new BorderLayout(5, 5));
 

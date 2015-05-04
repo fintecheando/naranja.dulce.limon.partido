@@ -1,5 +1,6 @@
 package com.floreantpos.ui.dialog;
 
+import com.floreantpos.POSConstants;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -40,38 +41,38 @@ public class TransactionCompletionDialog extends POSDialog {
 
 		setLayout(new MigLayout("align 50% 0%, ins 20", "[]20[]", ""));
 
-		add(createLabel("TOTAL AMOUNT" + ":", JLabel.LEFT), "grow");
+		add(createLabel(POSConstants.TOTAL_AMOUNT + ":", JLabel.LEFT), "grow");
 		lblTotalAmount = createLabel("0.0", JLabel.RIGHT);
 		add(lblTotalAmount, "span, grow");
 
-		add(createLabel("TENDERED AMOUNT" + ":", JLabel.LEFT), "newline,grow");
+		add(createLabel(POSConstants.TENDERED_AMOUNT + ":", JLabel.LEFT), "newline,grow");
 		lblTenderedAmount = createLabel("0.0", JLabel.RIGHT);
 		add(lblTenderedAmount, "span, grow");
 
 		add(new JSeparator(), "newline,span, grow");
 
-		add(createLabel("PAID AMOUNT" + ":", JLabel.LEFT), "newline,grow");
+		add(createLabel(POSConstants.PAID_AMOUNT + ":", JLabel.LEFT), "newline,grow");
 		lblPaidAmount = createLabel("0.0", JLabel.RIGHT);
 		add(lblPaidAmount, "span, grow");
 
-		add(createLabel("DUE AMOUNT" + ":", JLabel.LEFT), "newline,grow");
+		add(createLabel(POSConstants.DUE_AMOUNT + ":", JLabel.LEFT), "newline,grow");
 		lblDueAmount = createLabel("0.0", JLabel.RIGHT);
 		add(lblDueAmount, "span, grow");
 
 		add(new JSeparator(), "newline,span, grow");
 
-		add(createLabel("GRATUITY AMOUNT" + ":", JLabel.LEFT), "newline,grow");
+		add(createLabel(POSConstants.GRATUITY_AMOUNT + ":", JLabel.LEFT), "newline,grow");
 		lblGratuityAmount = createLabel("0.0", JLabel.RIGHT);
 		add(lblGratuityAmount, "span, grow");
 
 		add(new JSeparator(), "newline,span, grow");
 
-		add(createLabel("CHANGE DUE" + ":", JLabel.LEFT), "grow");
+		add(createLabel(POSConstants.CHANGE_DUE + ":", JLabel.LEFT), "grow");
 		lblChangeDue = createLabel("0.0", JLabel.RIGHT);
 		add(lblChangeDue, "span, grow");
 
 		add(new JSeparator(), "sg mygroup,newline,span,grow");
-		PosButton btnClose = new PosButton("CLOSE");
+		PosButton btnClose = new PosButton(POSConstants.CLOSE);
 		btnClose.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent e) {
@@ -80,7 +81,7 @@ public class TransactionCompletionDialog extends POSDialog {
 
 		});
 
-		PosButton btnPrintStoreCopy = new PosButton("PRINT STORE COPY");
+		PosButton btnPrintStoreCopy = new PosButton(POSConstants.PRINT_STORE_COPY);
 		btnPrintStoreCopy.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
@@ -94,7 +95,7 @@ public class TransactionCompletionDialog extends POSDialog {
 			}
 		});
 
-		PosButton btnPrintAllCopy = new PosButton("PRINT STORE & MERCHANT COPY");
+		PosButton btnPrintAllCopy = new PosButton(POSConstants.PRINT_STORE_MERCHANT_COPY);
 		btnPrintAllCopy.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
@@ -116,7 +117,7 @@ public class TransactionCompletionDialog extends POSDialog {
 			p.add(btnClose, "skip, h 50");
 		}
 		else {
-			btnPrintStoreCopy.setText("PRINT");
+			btnPrintStoreCopy.setText(POSConstants.PRINT);
 			p.add(btnPrintStoreCopy, "skip, h 50");
 			p.add(btnClose, "skip, h 50");
 		}

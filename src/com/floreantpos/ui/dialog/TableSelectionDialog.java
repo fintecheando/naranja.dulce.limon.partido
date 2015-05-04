@@ -74,7 +74,7 @@ public class TableSelectionDialog extends POSDialog implements ActionListener {
 		posButton.addActionListener(this);
 		keypadPanel.add(posButton, "growy,height 55,wrap, w 100!");
 
-		String[][] numbers = { { "7", "8", "9" }, { "4", "5", "6" }, { "1", "2", "3" }, { "0", "CLEAR" } };
+		String[][] numbers = { { "7", "8", "9" }, { "4", "5", "6" }, { "1", "2", "3" }, { "0", POSConstants.CLEAR } };
 		String[][] iconNames = new String[][] { { "7_32.png", "8_32.png", "9_32.png" }, { "4_32.png", "5_32.png", "6.png" },
 				{ "1_32.png", "2_32.png", "3_32.png" }, { "0_32.png", "clear.png" } };
 

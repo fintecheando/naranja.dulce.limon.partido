@@ -41,7 +41,7 @@ public class SwitchboardOtherFunctionsDialog extends POSDialog implements Action
 		super();
 		this.switchboardView = switchboardView;
 		
-		setTitle("OTHER FUNCTIONS");
+		setTitle(POSConstants.OTHER_FUNCTIONS_BUTTON_TEXT);
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		setSize(800, 400);
 		

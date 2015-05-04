@@ -1,5 +1,6 @@
 package com.floreantpos.ui.views.payment;
 
+import com.floreantpos.POSConstants;
 import java.awt.BorderLayout;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -42,7 +43,7 @@ public class ConfirmPayDialog extends POSDialog {
 				dispose();
 			}
 		});
-		psbtnConfirm.setText("CONFIRM");
+		psbtnConfirm.setText(POSConstants.CONFIRM_BUTTON_TEXT);
 		panel_1.add(psbtnConfirm);
 		
 		PosButton psbtnCancel = new PosButton();
@@ -52,11 +53,11 @@ public class ConfirmPayDialog extends POSDialog {
 				dispose();
 			}
 		});
-		psbtnCancel.setText("CANCEL");
+		psbtnCancel.setText(POSConstants.CANCEL_BUTTON_TEXT);
 		panel_1.add(psbtnCancel);
 		
 		TitlePanel titlePanel = new TitlePanel();
-		titlePanel.setTitle("Confirm payment");
+		titlePanel.setTitle(POSConstants.CONFIRM_PAYMENT);
 		getContentPane().add(titlePanel, BorderLayout.NORTH);
 		
 		lblInfo = new JLabel("");
@@ -70,7 +71,7 @@ public class ConfirmPayDialog extends POSDialog {
 	}
 	
 	public void setAmount(double amount) {
-		lblInfo.setText("<html>You are going to process <b>" + Application.getCurrencySymbol() + amount
-							+ "</b>.<br/><br/>If you are sure press <b>CONFIRM</b>, otherwise press <b>CANCEL</b>.<br/><br/></html>");
+		lblInfo.setText(POSConstants.PAYMENT_YOU_ARE_GOING_TO + Application.getCurrencySymbol() + amount
+							+ POSConstants.PAYMENT_CONFIRM_CANCEL);
 	}
 }

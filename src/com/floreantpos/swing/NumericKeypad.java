@@ -1,5 +1,6 @@
 package com.floreantpos.swing;
 
+import com.floreantpos.POSConstants;
 import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.KeyboardFocusManager;
@@ -144,7 +145,7 @@ public class NumericKeypad extends javax.swing.JComponent {
 
 		posButton10.setAction(goAction);
 		posButton10.setIcon(com.floreantpos.IconFactory.getIcon("clear.png"));
-		posButton10.setText("CLEAR");
+		posButton10.setText(POSConstants.CLEAR);
 		add(keypadPanel, BorderLayout.CENTER);
 	}// </editor-fold>
 

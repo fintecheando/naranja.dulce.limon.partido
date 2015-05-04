@@ -293,10 +293,10 @@ public class Application {
 			}
 
 			if (restaurant.isItemPriceIncludesTax()) {
-				posWindow.setStatus("Tax is included in item price");
+				posWindow.setStatus(POSConstants.TAX_INCLUDED);
 			}
 			else {
-				posWindow.setStatus("Tax is not included in item price");
+				posWindow.setStatus(POSConstants.TAX_NON_INCLUDED);
 			}
 		} catch (Exception e) {
 			throw new DatabaseConnectionException();

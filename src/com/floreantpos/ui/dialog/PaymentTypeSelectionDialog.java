@@ -18,6 +18,7 @@ import javax.swing.border.TitledBorder;
 import net.miginfocom.swing.MigLayout;
 
 import com.floreantpos.IconFactory;
+import com.floreantpos.POSConstants;
 import com.floreantpos.model.PaymentType;
 import com.floreantpos.swing.PosButton;
 
@@ -33,7 +34,7 @@ public class PaymentTypeSelectionDialog extends POSDialog {
 	/** Creates new form PaymentTypeSelectionDialog */
 	public PaymentTypeSelectionDialog() {
 		super();
-		setTitle("Select payment type");
+		setTitle(POSConstants.SELECT_PAYMENT_TYPE);
 		
 		initComponents();
 	}
@@ -92,7 +93,7 @@ public class PaymentTypeSelectionDialog extends POSDialog {
 		return selectedPaymentType;
 	}
 
-	// End of variables declaration//GEN-END:variables
+	// End of variables declaration                   
 	
 	class PaymentSelectionButton extends PosButton implements ActionListener {
 		PaymentType paymentType;

@@ -288,8 +288,8 @@ class LoginPasswordEntryView extends JPanel {
 
 		} catch (UserNotFoundException e) {
 			LogFactory.getLog(Application.class).error(e);
-			POSMessageDialog.showError("User not found");
-			msgLabel.setText("Login failed, please try again...");
+			POSMessageDialog.showError(POSConstants.ERROR_USER);
+			msgLabel.setText(POSConstants.ERROR_LOGIN);
 		} catch (ShiftException e) {
 			LogFactory.getLog(Application.class).error(e);
 			MessageDialog.showError(e.getMessage());
