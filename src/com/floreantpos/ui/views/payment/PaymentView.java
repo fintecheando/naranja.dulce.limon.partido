@@ -303,7 +303,8 @@ public class PaymentView extends JPanel {
 
 			PosButton button = (PosButton) e.getSource();
 			String s = button.getActionCommand();
-			if (s.equals("CLEAR")) {
+                        
+			if (s.equals(POSConstants.CLEAR)) {
 				textField.setText(ADD);
 			}
 			else if (s.equals(".")) {

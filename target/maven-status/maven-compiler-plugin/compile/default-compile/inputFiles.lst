@@ -19,7 +19,6 @@
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/model/EnumUserType.java
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/bo/actions/GroupExplorerAction.java
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/report/HourlyLaborReportModel.java
-/home/victor/dev/floreantDev/floreantpos-code/src/net/sf/jasperreports/engine/print/JRPrinterAWT.java
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/ui/views/order/OrderTypeSelectionDialog.java
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/ui/dialog/PasswordEntryDialog.java
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/model/dao/BaseMenuItemShiftDAO.java
@@ -44,7 +43,6 @@
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/bo/actions/NewMenuGroupAction.java
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/config/ui/ConfigurationDialog.java
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/model/dao/BaseInventoryMetaCodeDAO.java
-/home/victor/dev/floreantDev/floreantpos-code/src/net/sf/jasperreports/swing/JRViewerPanel.java
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/ui/views/order/ViewPanel.java
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/ui/views/CashDropView.java
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/model/base/BaseTicketItemModifierGroup.java
@@ -122,6 +120,7 @@
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/ui/views/payment/CardProcessor.java
 /home/victor/dev/floreantDev/floreantpos-code/src/jpos/config/simple/xml/AbstractXercesRegPopulator.java
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/report/SalesReport.java
+/home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/jasperreport/swing/JRViewerPanel.java
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/model/dao/VirtualPrinterDAO.java
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/swing/event/KeypadEventListener.java
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/bo/actions/CreditCardReportAction.java
@@ -148,7 +147,6 @@
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/actions/ShowOnlineTicketManagementAction.java
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/ui/dialog/AboutDialog.java
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/model/Customer.java
-/home/victor/dev/floreantDev/floreantpos-code/src/net/sf/jasperreports/swing/JRViewer.java
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/ui/views/payment/CardInputter.java
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/model/dao/BaseTaxDAO.java
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/model/dao/PayOutTransactionDAO.java
@@ -360,6 +358,7 @@
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/util/ShiftException.java
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/model/ShopTable.java
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/model/dao/BaseCreditCardTransactionDAO.java
+/home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/jasperreport/engine/print/JRPrinterAWT.java
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/bo/ui/explorer/ModifierGroupExplorer.java
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/model/dao/BaseRefundTransactionDAO.java
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/model/base/BaseCustomer.java
@@ -458,6 +457,7 @@
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/model/PayoutRecepient.java
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/model/base/BasePayoutReason.java
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/ui/views/LoginPasswordEntryView.java
+/home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/jasperreport/swing/JRViewer.java
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/model/PrinterConfiguration.java
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/actions/LogoutAction.java
 /home/victor/dev/floreantDev/floreantpos-code/src/com/floreantpos/report/Report.java

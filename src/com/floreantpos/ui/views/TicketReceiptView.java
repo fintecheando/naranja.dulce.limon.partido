@@ -1,5 +1,6 @@
 package com.floreantpos.ui.views;
 
+import com.floreantpos.jasperreport.swing.JRViewer;
 import java.awt.BorderLayout;
 
 import javax.swing.JPanel;
@@ -7,12 +8,12 @@ import javax.swing.JPanel;
 import net.sf.jasperreports.engine.JasperPrint;
 
 public class TicketReceiptView extends JPanel {
-	net.sf.jasperreports.swing.JRViewer jrViewer;
+	JRViewer jrViewer;
 
 	public TicketReceiptView(JasperPrint jasperPrint) {
 		setLayout(new BorderLayout());
 		
-		jrViewer = new net.sf.jasperreports.swing.JRViewer(jasperPrint);
+		jrViewer = new JRViewer(jasperPrint);
 		jrViewer.setToolbarVisible(false);
 		jrViewer.setStatusbarVisible(false);
 		

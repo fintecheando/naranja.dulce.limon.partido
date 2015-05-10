@@ -63,7 +63,7 @@ public class ReceiptPrintService {
 	private static Log logger = LogFactory.getLog(ReceiptPrintService.class);
 
 	public static void printGenericReport(String title, String data) throws Exception {
-		HashMap<String, String> map = new HashMap<String, String>(2);
+		HashMap<String, Object> map = new HashMap<String, Object>(2);
 		map.put("title", title);
 		map.put("data", data);
 		JasperPrint jasperPrint = createJasperPrint(ReportUtil.getReport("generic-receipt"), map, new JREmptyDataSource());
@@ -87,12 +87,12 @@ public class ReceiptPrintService {
 //		}
 //	}
 
-	public static JasperPrint createJasperPrint(JasperReport report, Map<String, String> properties, JRDataSource dataSource) throws Exception {
+	public static JasperPrint createJasperPrint(JasperReport report, Map<String, Object> properties, JRDataSource dataSource) throws Exception {
 		JasperPrint jasperPrint = JasperFillManager.fillReport(report, properties, dataSource);
 		return jasperPrint;
 	}
 
-	public static JasperPrint createPrint(Ticket ticket, Map<String, String> map, PosTransaction transaction) throws Exception {
+	public static JasperPrint createPrint(Ticket ticket, Map<String, Object> map, PosTransaction transaction) throws Exception {
 		TicketDataSource dataSource = new TicketDataSource(ticket);
 		return createJasperPrint(ReportUtil.getReport("ticket-receipt"), map, new JRTableModelDataSource(dataSource));
 	}
@@ -495,9 +495,11 @@ public class ReceiptPrintService {
 
 	private static void printQuitely(JasperPrint jasperPrint) throws JRException {
 		try {
+                    System.out.println("NOMBRE DEL REPORTE "+jasperPrint.getName() );
 			JasperPrintManager.printReport(jasperPrint, false);
 		} catch (Exception x) {
 			x.printStackTrace();
+                        
 		}
 	}
 

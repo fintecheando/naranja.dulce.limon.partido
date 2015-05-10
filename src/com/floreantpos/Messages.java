@@ -30,7 +30,8 @@ public class Messages {
 		public ResourceBundle newBundle(String baseName, Locale locale, String format, ClassLoader loader, boolean reload) throws IllegalAccessException,
 				InstantiationException, IOException {
 			String bundlename = toBundleName(baseName, locale);
-			String resName = toResourceName(bundlename, "properties"); //$NON-NLS-1$
+			String resName = toResourceName(bundlename, "properties"); 
+                        System.out.println("ARCHIVO "+resName);//$NON-NLS-1$
 			InputStream stream = loader.getResourceAsStream(resName);
 			return new PropertyResourceBundle(new InputStreamReader(stream, "UTF-8")); //$NON-NLS-1$
 		}

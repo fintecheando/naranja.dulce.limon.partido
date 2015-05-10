@@ -1,6 +1,6 @@
 ----------------------------------------------------------------
-Sun May 03 22:27:47 CDT 2015:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.1.2 - (1095077): instance a816c00e-014d-1cf7-1fca-00000b153768 
+Sat May 09 18:34:42 CDT 2015:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.1.2 - (1095077): instance a816c00e-014d-3b07-df6c-00000ae1d240 
 on database directory /home/victor/dev/floreantDev/floreantpos-code/target/floreantpos-bin/floreantpos/database/derby-single/posdb  with class loader sun.misc.Launcher$AppClassLoader@305f387c 
 Loaded from file:/home/victor/dev/floreantDev/floreantpos-code/target/floreantpos-bin/floreantpos/lib/derby-10.8.1.2.jar
 java.vendor=Oracle Corporation

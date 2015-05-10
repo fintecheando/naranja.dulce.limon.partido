@@ -4,7 +4,6 @@ import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
 
 import javax.swing.JButton;
@@ -17,7 +16,7 @@ import net.miginfocom.swing.MigLayout;
 import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.engine.JasperReport;
-import net.sf.jasperreports.engine.data.JRTableModelDataSource;
+//import net.sf.jasperreports.engine.data.JRTableModelDataSource;
 import net.sf.jasperreports.view.JRViewer;
 
 import org.jdesktop.swingx.JXDatePicker;
@@ -31,6 +30,9 @@ import com.floreantpos.ui.dialog.POSMessageDialog;
 import com.floreantpos.ui.util.UiUtil;
 import com.floreantpos.util.NumberUtil;
 import com.floreantpos.util.PanelTester;
+import java.util.HashMap;
+import java.util.Map;
+import net.sf.jasperreports.engine.data.JRTableModelDataSource;
 
 public class CreditCardReportView extends JPanel {
 	private JXDatePicker fromDatePicker = UiUtil.getCurrentMonthStart();
@@ -97,7 +99,7 @@ public class CreditCardReportView extends JPanel {
 			totalTips += transaction.getTipsAmount();
 		}
 		
-		HashMap<String, String> map = new HashMap<String, String>();
+		HashMap<String, Object> map = new HashMap<String, Object>();
 		ReportUtil.populateRestaurantProperties(map);
 		map.put("reportTitle", "========= CREDIT CARD REPORT ==========");
 		map.put("fromDate", ReportService.formatShortDate(fromDate));
@@ -110,8 +112,9 @@ public class CreditCardReportView extends JPanel {
 		map.put("total", NumberUtil.formatNumber(totalSales));
 		
 		JasperReport jasperReport = ReportUtil.getReport("credit-card-report");
-		JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, map, new JRTableModelDataSource(new CardReportModel(transactions)));
-		JRViewer viewer = new JRViewer(jasperPrint);
+                JRTableModelDataSource ds = new JRTableModelDataSource(new CardReportModel(transactions));
+		JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, map, ds);
+                JRViewer viewer = new JRViewer(jasperPrint);
 		reportContainer.removeAll();
 		reportContainer.add(viewer);
 		reportContainer.revalidate();

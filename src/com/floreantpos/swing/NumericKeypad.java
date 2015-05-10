@@ -174,8 +174,7 @@ public class NumericKeypad extends javax.swing.JComponent {
 
 			focusedTextComponent = (JTextComponent) focusOwner;
 
-			String command = e.getActionCommand();
-
+			String command = e.getActionCommand();                        
 			if (com.floreantpos.POSConstants.CLEAR.equals(command)) {
 				focusedTextComponent.setText("");
 			}
