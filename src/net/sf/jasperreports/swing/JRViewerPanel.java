@@ -436,7 +436,7 @@ public class JRViewerPanel extends JPanel implements JRHyperlinkListener, JRView
 			exporter.setParameter(JRGraphics2DExporterParameter.ZOOM_RATIO, new Float(realZoom));
 			exporter.setParameter(JRExporterParameter.OFFSET_X, Integer.valueOf(1)); //lblPage border
 			exporter.setParameter(JRExporterParameter.OFFSET_Y, Integer.valueOf(1));
-			exporter.setParameter(JRExporterParameter.FILE_RESOLVER, viewerContext.getFileResolver());
+			//exporter.setParameter(JRExporterParameter.FILE_RESOLVER, viewerContext.getFileResolver());
 			exporter.exportReport();
 		} catch (Exception e) {
 			if (log.isErrorEnabled()) {
